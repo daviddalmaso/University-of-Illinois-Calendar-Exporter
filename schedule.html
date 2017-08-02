@@ -1,0 +1,546 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML lang="en">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Pragma" NAME="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" NAME="Cache-Control" CONTENT="no-cache">
+<LINK REL="stylesheet" HREF="/UI_css/UI_web_defaultapp.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="/css/web_defaultprint.css" TYPE="text/css" media="print">
+<TITLE>Student Schedule - Detail; Registration; Registration and Records Tab</TITLE>
+<META HTTP-EQUIV="Content-Script-Type" NAME="Default_Script_Language" CONTENT="text/javascript">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="headerwrapperdiv">
+<DIV class="pageheaderdiv1">
+<A HREF="#main_content" onMouseover="window.status='Go to Main Content'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Go to Main Content'; return true" onBlur="window.status=''; return true" class="skiplinks">Go to Main Content</A>
+<H1>University of Illinois</H1></DIV><DIV class="headerlinksdiv">
+<SPAN class="pageheaderlinks2">
+<MAP NAME="Module_Navigation_Links_H" title="Module Navigation Links">
+<p>
+<A HREF="#skip_Module_Navigation_Links_H" onMouseover="window.status='Skip Module Navigation Links'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Skip Module Navigation Links'; return true" onBlur="window.status=''; return true"  class="skiplinks">Skip Module Navigation Links</A>
+<TABLE  CLASS="plaintable" SUMMARY="This is main table for displaying Tab Items."
+                          WIDTH="100%" cellSpacing=0 cellPadding=0 border=0>
+<TR>
+<TD CLASS="pldefault">
+<TABLE  CLASS="plaintable" SUMMARY="This table displays Tab Items."
+                 cellSpacing=0 cellPadding=0 border=0>
+<TR>
+<td class="taboff" height=22>
+<A HREF="/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu" onMouseover="window.status='New Personal Information'; return true" onMouseout="window.status=''; return true" onFocus="window.status='New Personal Information'; return true" onBlur="window.status=''; return true" >Personal Information</A>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" CLASS="headerImg" TITLE=""  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+<td class="taboff" height=22>
+<A HREF="/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_FinAidMainMnu" onMouseover="window.status='Financial Aid '; return true" onMouseout="window.status=''; return true" onFocus="window.status='Financial Aid '; return true" onBlur="window.status=''; return true" >Financial Aid </A>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" CLASS="headerImg" TITLE=""  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+<td class="tabon"  height=22>
+<A HREF="/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu" onMouseover="window.status='Registration & Records'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Registration & Records'; return true" onBlur="window.status=''; return true" >Registration & Records</A>
+</TD>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" CLASS="headerImg" TITLE=""  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+<td class="taboff" height=22>
+<A HREF="/BANPROD1/pkg_twbacbil.P_DispAlerts" onMouseover="window.status='Account Billing Information'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Account Billing Information'; return true" onBlur="window.status=''; return true" >Account Billing Information</A>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" CLASS="headerImg" TITLE=""  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+<td class="taboff" height=22>
+<A HREF="/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_GradMainMnu" onMouseover="window.status='Graduation'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Graduation'; return true" onBlur="window.status=''; return true" >Graduation</A>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<IMG SRC="/wtlgifs/web_tab_corner_right.gif" CLASS="headerImg" TITLE=""  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+<TR>
+<TD class="bgtabon" width="100%" colSpan=2><IMG SRC="/wtlgifs/web_transparent.gif" CLASS="headerImg" TITLE=""  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD></TR></TABLE>
+</MAP>
+</SPAN>
+<a name="skip_Module_Navigation_Links_H"></a>
+</DIV>
+<TABLE  CLASS="plaintable" SUMMARY="This table displays Menu Items and Banner Search textbox."
+         WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<DIV class="headerlinksdiv2">
+<FORM ACTION="/BANPROD1/twbksrch.P_ShowResults" METHOD="POST">
+Search
+<SPAN class="fieldlabeltextinvisible"><LABEL for=keyword_in_id><SPAN class="fieldlabeltext">Search</SPAN></LABEL></SPAN>
+<INPUT TYPE="text" NAME="KEYWRD_IN" SIZE="20" MAXLENGTH="65" ID="keyword_in_id">
+<INPUT TYPE="submit" VALUE="Go">
+</FORM>
+</div>
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext"></p>
+<SPAN class="pageheaderlinks">
+<A HREF="/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_RegMnu"  class="submenulinktext2" id="ssbbackurl">RETURN TO MENU</A>
+|
+<A HREF="/BANPROD1/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3" accesskey="2" class="submenulinktext2">SITE MAP</A>
+|
+<A HREF="/UI_help/P_CrseSchdDetl.html" accesskey="H" onClick="popup = window.open('/UI_help/P_CrseSchdDetl.html', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</A>
+|
+<A HREF="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</A>
+</span>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="pagetitlediv">
+<TABLE  CLASS="plaintable" SUMMARY="This table displays title and static header displays."
+   WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<H2>University of Illinois Student Schedule - Detail</H2>
+</TD>
+<TD CLASS="pldefault">
+&nbsp;
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext"></p>
+<DIV class="staticheaders">
+673051159 David  J. Dalmaso <br>
+Fall 2017 - Urbana-Champaign<br>
+Aug 01, 2017 08:28 pm<br>
+</div>
+</TD>
+</TR>
+<TR>
+<TD class="bg3" width="100%" colSpan=3><IMG SRC="/wtlgifs/web_transparent.gif" CLASS="headerImg" TITLE=""  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD>
+</TR>
+</TABLE>
+<a name="main_content"></a>
+</DIV>
+<DIV class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<DIV class="infotextdiv"><TABLE  CLASS="infotexttable" SUMMARY="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><TR><TD CLASS="indefault"><IMG SRC="/wtlgifs/web_info_cascade.png" CLASS="headerImg" TITLE=""  NAME="web_info" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=12 WIDTH=14></TD><TD CLASS="indefault"><SPAN class="infotext"> To <b>print your University of Illinois schedule</b>, follow the print instructions for your web browser as you would to print any web page.</SPAN></TD></TR></TABLE></DIV><P><DIV class="infotextdiv"><TABLE  CLASS="infotexttable" SUMMARY="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><TR><TD CLASS="indefault"><IMG SRC="/wtlgifs/web_daycalendar.gif" CLASS="headerImg" TITLE=""  NAME="web_daycalendar" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=19></TD><TD CLASS="indefault"><SPAN class="infotext">You may view a mobile version of your daily schedule on the <a href=" http://go.illinois.edu/StudentMobile" target="_new">Student Mobile</a> web application. Upon accessing the <a href="http://go.illinois.edu/StudentMobile" target="_new">http://go.illinois.edu/StudentMobile</a> url, bookmark the site and add it to your home screen for future use. Enterprise ID and password authentication is required to view personal information.</SPAN></TD></TR></TABLE><P></DIV>
+Total Credit Hours: 16.000
+<BR>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This layout table is used to present the schedule course detail"><CAPTION class="captiontext">Intro to Algs & Models of Comp - CS 374 - ADE</CAPTION>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Associated Term:</TH>
+<TD CLASS="dddefault">Fall 2017 - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" ><ACRONYM title = "Course Reference Number">CRN</ACRONYM>:</TH>
+<TD CLASS="dddefault">66450</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Status:</TH>
+<TD CLASS="dddefault">**Web Registered** on Apr 12, 2017</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Assigned Instructor:</TH>
+<TD CLASS="dddefault">
+Alexandra Kolla<A HREF="mailto:akolla@illinois.edu"    target="Alexandra Kolla" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>, 
+Sariel Har-Peled<A HREF="mailto:sariel@illinois.edu"    target="Sariel Har-Peled" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>
+</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Grade Mode:</TH>
+<TD CLASS="dddefault">Standard Letter</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Credits:</TH>
+<TD CLASS="dddefault">    0.000</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Level:</TH>
+<TD CLASS="dddefault">Undergrad - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Campus:</TH>
+<TD CLASS="dddefault">Urbana-Champaign</TD>
+</TR>
+</TABLE>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">1:00 pm - 1:50 pm</TD>
+<TD CLASS="dddefault">WF</TD>
+<TD CLASS="dddefault">Siebel Center for Comp Sci 1304</TD>
+<TD CLASS="dddefault">Aug 28, 2017 - Dec 13, 2017</TD>
+<TD CLASS="dddefault">Discussion/Recitation</TD>
+<TD CLASS="dddefault">Alexandra -  Kolla (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:akolla@illinois.edu"    target="Alexandra Kolla" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>, Sariel -  Har-Peled <A HREF="mailto:sariel@illinois.edu"    target="Sariel Har-Peled" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This layout table is used to present the schedule course detail"><CAPTION class="captiontext">Intro to Algs & Models of Comp - CS 374 - AL1</CAPTION>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Associated Term:</TH>
+<TD CLASS="dddefault">Fall 2017 - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" ><ACRONYM title = "Course Reference Number">CRN</ACRONYM>:</TH>
+<TD CLASS="dddefault">66445</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Status:</TH>
+<TD CLASS="dddefault">**Web Registered** on Apr 12, 2017</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Assigned Instructor:</TH>
+<TD CLASS="dddefault">
+Alexandra Kolla<A HREF="mailto:akolla@illinois.edu"    target="Alexandra Kolla" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>, 
+Sariel Har-Peled<A HREF="mailto:sariel@illinois.edu"    target="Sariel Har-Peled" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>
+</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Grade Mode:</TH>
+<TD CLASS="dddefault">Standard Letter</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Credits:</TH>
+<TD CLASS="dddefault">    4.000</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Level:</TH>
+<TD CLASS="dddefault">Undergrad - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Campus:</TH>
+<TD CLASS="dddefault">Urbana-Champaign</TD>
+</TR>
+</TABLE>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">11:00 am - 12:15 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Electrical & Computer Eng Bldg 1002</TD>
+<TD CLASS="dddefault">Aug 28, 2017 - Dec 13, 2017</TD>
+<TD CLASS="dddefault">Lecture</TD>
+<TD CLASS="dddefault">Alexandra -  Kolla (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:akolla@illinois.edu"    target="Alexandra Kolla" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>, Sariel -  Har-Peled <A HREF="mailto:sariel@illinois.edu"    target="Sariel Har-Peled" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This layout table is used to present the schedule course detail"><CAPTION class="captiontext">Database Systems - CS 411 - Q3</CAPTION>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Associated Term:</TH>
+<TD CLASS="dddefault">Fall 2017 - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" ><ACRONYM title = "Course Reference Number">CRN</ACRONYM>:</TH>
+<TD CLASS="dddefault">30109</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Status:</TH>
+<TD CLASS="dddefault">**Web Registered** on Apr 12, 2017</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Assigned Instructor:</TH>
+<TD CLASS="dddefault">
+Kevin C. Chang<A HREF="mailto:kcchang@illinois.edu"    target="Kevin C. Chang" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>
+</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Grade Mode:</TH>
+<TD CLASS="dddefault">Standard Letter</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Credits:</TH>
+<TD CLASS="dddefault">    3.000</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Level:</TH>
+<TD CLASS="dddefault">Undergrad - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Campus:</TH>
+<TD CLASS="dddefault">Urbana-Champaign</TD>
+</TR>
+</TABLE>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">3:30 pm - 4:45 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Digital Computer Laboratory 1320</TD>
+<TD CLASS="dddefault">Aug 28, 2017 - Dec 13, 2017</TD>
+<TD CLASS="dddefault">Lecture-Discussion</TD>
+<TD CLASS="dddefault">Kevin C  Chang (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:kcchang@illinois.edu"    target="Kevin C. Chang" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This layout table is used to present the schedule course detail"><CAPTION class="captiontext">Machine Learning - CS 446 - D3</CAPTION>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Associated Term:</TH>
+<TD CLASS="dddefault">Fall 2017 - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" ><ACRONYM title = "Course Reference Number">CRN</ACRONYM>:</TH>
+<TD CLASS="dddefault">46792</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Status:</TH>
+<TD CLASS="dddefault">**Web Registered** on Apr 12, 2017</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Assigned Instructor:</TH>
+<TD CLASS="dddefault">
+Oluwasanmi O. Koyejo<A HREF="mailto:sanmi@illinois.edu"    target="Oluwasanmi O. Koyejo" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>
+</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Grade Mode:</TH>
+<TD CLASS="dddefault">Standard Letter</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Credits:</TH>
+<TD CLASS="dddefault">    3.000</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Level:</TH>
+<TD CLASS="dddefault">Undergrad - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Campus:</TH>
+<TD CLASS="dddefault">Urbana-Champaign</TD>
+</TR>
+</TABLE>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">12:30 pm - 1:45 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Digital Computer Laboratory 1320</TD>
+<TD CLASS="dddefault">Aug 28, 2017 - Dec 13, 2017</TD>
+<TD CLASS="dddefault">Lecture</TD>
+<TD CLASS="dddefault">Oluwasanmi O  Koyejo (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:sanmi@illinois.edu"    target="Oluwasanmi O. Koyejo" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This layout table is used to present the schedule course detail"><CAPTION class="captiontext">The Art of Web Programming - CS 498 - RK1</CAPTION>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Associated Term:</TH>
+<TD CLASS="dddefault">Fall 2017 - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" ><ACRONYM title = "Course Reference Number">CRN</ACRONYM>:</TH>
+<TD CLASS="dddefault">66825</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Status:</TH>
+<TD CLASS="dddefault">**Web Registered** on Apr 12, 2017</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Assigned Instructor:</TH>
+<TD CLASS="dddefault">
+Ranjitha Kumar<A HREF="mailto:ranjitha@illinois.edu"    target="Ranjitha Kumar" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>
+</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Grade Mode:</TH>
+<TD CLASS="dddefault">Standard Letter</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Credits:</TH>
+<TD CLASS="dddefault">    3.000</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Level:</TH>
+<TD CLASS="dddefault">Undergrad - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Campus:</TH>
+<TD CLASS="dddefault">Urbana-Champaign</TD>
+</TR>
+</TABLE>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">2:00 pm - 3:15 pm</TD>
+<TD CLASS="dddefault">MW</TD>
+<TD CLASS="dddefault">Digital Computer Laboratory 1320</TD>
+<TD CLASS="dddefault">Aug 28, 2017 - Dec 13, 2017</TD>
+<TD CLASS="dddefault">Lecture</TD>
+<TD CLASS="dddefault">Ranjitha -  Kumar (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:ranjitha@illinois.edu"    target="Ranjitha Kumar" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This layout table is used to present the schedule course detail"><CAPTION class="captiontext">Space, Time, and Matter-ACP - PHYS 419 - A</CAPTION>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Associated Term:</TH>
+<TD CLASS="dddefault">Fall 2017 - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" ><ACRONYM title = "Course Reference Number">CRN</ACRONYM>:</TH>
+<TD CLASS="dddefault">34926</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Status:</TH>
+<TD CLASS="dddefault">**Web Registered** on Apr 12, 2017</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Assigned Instructor:</TH>
+<TD CLASS="dddefault">
+Anthony J. Leggett<A HREF="mailto:aleggett@illinois.edu"    target="Anthony J. Leggett" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A>
+</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Grade Mode:</TH>
+<TD CLASS="dddefault">Standard Letter</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Credits:</TH>
+<TD CLASS="dddefault">    3.000</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Level:</TH>
+<TD CLASS="dddefault">Undergrad - Urbana-Champaign</TD>
+</TR>
+<TR>
+<TH COLSPAN="2" CLASS="ddlabel" scope="row" >Campus:</TH>
+<TD CLASS="dddefault">Urbana-Champaign</TD>
+</TR>
+</TABLE>
+<TABLE  CLASS="datadisplaytable" SUMMARY="This table lists the scheduled meeting times and assigned instructors for this class.."><CAPTION class="captiontext">Scheduled Meeting Times</CAPTION>
+<TR>
+<TH CLASS="ddheader" scope="col" >Type</TH>
+<TH CLASS="ddheader" scope="col" >Time</TH>
+<TH CLASS="ddheader" scope="col" >Days</TH>
+<TH CLASS="ddheader" scope="col" >Where</TH>
+<TH CLASS="ddheader" scope="col" >Date Range</TH>
+<TH CLASS="ddheader" scope="col" >Schedule Type</TH>
+<TH CLASS="ddheader" scope="col" >Instructors</TH>
+</TR>
+<TR>
+<TD CLASS="dddefault">Class</TD>
+<TD CLASS="dddefault">2:00 pm - 3:20 pm</TD>
+<TD CLASS="dddefault">TR</TD>
+<TD CLASS="dddefault">Loomis Laboratory 144</TD>
+<TD CLASS="dddefault">Aug 28, 2017 - Dec 13, 2017</TD>
+<TD CLASS="dddefault">Lecture</TD>
+<TD CLASS="dddefault">Anthony J  Leggett (<ABBR title= "Primary">P</ABBR>)<A HREF="mailto:aleggett@illinois.edu"    target="Anthony J. Leggett" ><IMG SRC="/wtlgifs/web_email.gif" ALIGN="middle" CLASS="headerImg" TITLE=""  NAME="web_email" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=28></A></TD>
+</TR>
+</TABLE>
+<BR>
+<A HREF="javascript:history.go(-1)" onMouseOver="window.status='Return to Previous';  return true" onFocus="window.status='Return to Previous';  return true" onMouseOut="window.status='';  return true"onBlur="window.status='';  return true">Return to Previous</A>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<TABLE  CLASS="plaintable" SUMMARY="This is table displays line separator at end of the page."
+                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><TR><TD class="bgtabon" width="100%" colSpan=2><IMG SRC="/wtlgifs/web_transparent.gif" CLASS="headerImg" TITLE=""  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD></TR></TABLE>
+<A HREF="#top" onMouseover="window.status='Skip to top of page'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Skip to top of page'; return true" onBlur="window.status=''; return true" class="skiplinks">Skip to top of page</A>
+</DIV>
+<DIV class="footerbeforediv">
+
+</DIV>
+<DIV class="footerlinksdiv">
+<SPAN class="pagefooterlinks">
+<MAP NAME="Student_Schedule_-_Detail;_Registration;_Registration_and_Records_Tab_Links_F" title="Student Schedule - Detail; Registration; Registration and Records Tab Links">
+<p>
+<A HREF="#skip_Student_Schedule_-_Detail;_Registration;_Registration_and_Records_Tab_Links_F" onMouseover="window.status='Skip Student Schedule - Detail; Registration; Registration and Records Tab Links'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Skip Student Schedule - Detail; Registration; Registration and Records Tab Links'; return true" onBlur="window.status=''; return true"  class="skiplinks">Skip Student Schedule - Detail; Registration; Registration and Records Tab Links</A>
+<P>[ <A HREF="/BANPROD1/bwskflib.P_SelDefTerm" onMouseover="window.status='Select a Term'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Select a Term'; return true" onBlur="window.status=''; return true" >Select a Term</A>
+ | <A HREF="/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_RegAgreementAdd" onMouseover="window.status='Add/Drop Classes'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Add/Drop Classes'; return true" onBlur="window.status=''; return true" >Add/Drop Classes</A>
+ | <A HREF="/BANPROD1/bwskfreg.P_ChangeCrseOpt" onMouseover="window.status='Change Credit Hours'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Change Credit Hours'; return true" onBlur="window.status=''; return true" >Change Credit Hours</A>
+ | <A HREF="/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_RegAgreementLook" onMouseover="window.status='Look-up or Select Classes'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Look-up or Select Classes'; return true" onBlur="window.status=''; return true" >Look-up or Select Classes</A>
+ | <A HREF="/BANPROD1/bwskffee.P_FeeAsses" onMouseover="window.status='Tuition and Fees Assessment'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Tuition and Fees Assessment'; return true" onBlur="window.status=''; return true" >Tuition and Fees Assessment</A>
+ | <A HREF="/BANPROD1/bwskcrse.P_CrseSchdDetl" onMouseover="window.status='Student Schedule – Concise'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Student Schedule – Concise'; return true" onBlur="window.status=''; return true" >Student Schedule – Concise</A>
+ ]
+</MAP>
+</SPAN>
+<a name="skip_Student_Schedule_-_Detail;_Registration;_Registration_and_Records_Tab_Links_F"></a>
+</DIV>
+<DIV class="footerafterdiv">
+
+</DIV>
+<DIV class="globalafterdiv">
+
+</DIV>
+<DIV class="globalfooterdiv">
+
+</DIV>
+<DIV class="pagefooterdiv">
+<SPAN class="releasetext">Release: 8.7.1</SPAN>
+</DIV>
+<DIV class="poweredbydiv">
+</DIV>
+<DIV class="div1"></DIV>
+<DIV class="div2"></DIV>
+<DIV class="div3"></DIV>
+<DIV class="div4"></DIV>
+<DIV class="div5"></DIV>
+<DIV class="div6"></DIV>
+<div class="banner_copyright"> <br><h5>© 2017 Ellucian Company L.P. and its affiliates.<br></h5></div>
+</BODY>
+</HTML>
