@@ -19,10 +19,7 @@ def get_schedule_page():
   # Initial login page 
   initial_page = br.open("https://eas.admin.uillinois.edu/eas/servlet/EasLogin?redirect=https://webprod.admin.uillinois.edu/ssa/servlet/SelfServiceLogin?appName=edu.uillinois.aits.SelfServiceLogin&dad=BANPROD1")
   initial_page_request = br.request
-  #print("Initial page response: ")
-  #print(initial_page.info())
-  #print("Initial page request: ")
-  #print(initial_page_request.header_items())
+
 
   # Submitting login form
   br.form = list(br.forms())[0]
